@@ -3,24 +3,19 @@ This project showcases a data pipeline that integrates Snowflake and Spark to an
 
 ## How to Replicate
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/garideli/Spark-Snowflake-In-JupyterNotebook.git
-   cd Spark-Snowflake-In-JupyterNotebook
+```bash
+# Step 1: Clone this repository
+git clone https://github.com/garideli/Spark-Snowflake-In-JupyterNotebook.git
+cd Spark-Snowflake-In-JupyterNotebook
 
-2.	Set up a .env file in the root directory with the following content:
-ENV_PATH=/absolute/path/to/.env
+# Step 2: Set up a .env file in the root directory with the following content
+echo "ENV_PATH=/absolute/path/to/.env
 SNOWFLAKE_USER=your_snowflake_username
-SNOWFLAKE_PASSWORD=your_snowflake_password
+SNOWFLAKE_PASSWORD=your_snowflake_password" > .env
 
-3.	Install dependencies and run the notebook:
+# Step 3: Install dependencies
 pip install -r requirements.txt
+
+# Step 4: Run the notebook
 jupyter notebook retail_sales_analysis.ipynb
-
-4.	Run each cell in the notebook using Ctrl+Enter.
-
-
-
-
-
 
